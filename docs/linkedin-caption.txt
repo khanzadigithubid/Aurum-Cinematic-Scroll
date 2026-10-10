@@ -1,0 +1,18 @@
+I built a cinematic 3D website from scratch. 🌀
+
+Every beat of the page is a scene, and all motion is tied to scroll — not time.
+
+→ WebGL shader monolith driven by scroll
+→ Ink-bleed full-screen menu (custom GLSL)
+→ Double-helix gallery that unfolds into a grid
+→ Fully synthesised ambient sound, zero audio files
+→ Custom cursor, magnetic buttons, kinetic typography
+
+Stack: Three.js · GSAP ScrollTrigger · Lenis · Vite
+
+The hardest part? Tying Lenis, GSAP and the shader uniforms to a single animation clock so every frame stays in sync.
+
+🔗 Live: https://aurum-cinematic-scroll.vercel.app/
+💻 Code: github.com/khanzadigithubid/Aurum-Cinematic-Scroll
+
+#WebGL #ThreeJS #GSAP #CreativeDevelopment #Frontend #JavaScript

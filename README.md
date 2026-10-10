@@ -10,6 +10,7 @@
 </p>
 
 <p align="center">
+  <a href="https://aurum-cinematic-scroll.vercel.app/"><img alt="Live Demo" src="https://img.shields.io/badge/Live_Demo-aurum--cinematic--scroll-d8ff3e?style=flat-square" /></a>
   <a href="https://github.com/khanzadigithubid/Aurum-Cinematic-Scroll/blob/main/LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-d8ff3e?style=flat-square" /></a>
   <a href="https://github.com/khanzadigithubid/Aurum-Cinematic-Scroll/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/khanzadigithubid/Aurum-Cinematic-Scroll?style=flat-square" /></a>
   <a href="https://github.com/khanzadigithubid/Aurum-Cinematic-Scroll/network/members"><img alt="Forks" src="https://img.shields.io/github/forks/khanzadigithubid/Aurum-Cinematic-Scroll?style=flat-square" /></a>
@@ -36,7 +37,7 @@ _Site of the Day_ builds. It combines a WebGL-shaded hero object, scroll-driven
 scene choreography, a full-screen ink-bleed menu, a double-helix gallery, and
 synthesised ambient sound — all tied to a single animation clock.
 
-> **Live demo:** _coming soon (deploying to Vercel)_
+> **Live demo:** [aurum-cinematic-scroll.vercel.app](https://aurum-cinematic-scroll.vercel.app/)
 
 ## ✦ Screenshots
 
