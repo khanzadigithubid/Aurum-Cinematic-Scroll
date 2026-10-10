@@ -25,6 +25,10 @@
 
 ---
 
+<p align="center">
+  <img src="docs/screenshots/hero.png" alt="AURUM hero — kinetic typography over a WebGL monolith" width="100%" />
+</p>
+
 ## ✦ Overview
 
 AURUM is a creative-development showcase built to the standard of Awwwards
@@ -33,6 +37,20 @@ scene choreography, a full-screen ink-bleed menu, a double-helix gallery, and
 synthesised ambient sound — all tied to a single animation clock.
 
 > **Live demo:** _coming soon (deploying to Vercel)_
+
+## ✦ Screenshots
+
+| Object — scroll-driven monolith                | Gallery — WebGL hover displacement               |
+| ---------------------------------------------- | ------------------------------------------------ |
+| ![Object section](docs/screenshots/object.png) | ![Gallery section](docs/screenshots/gallery.png) |
+
+| Double-helix gallery                         | Ink-bleed menu                               |
+| -------------------------------------------- | -------------------------------------------- |
+| ![Helix section](docs/screenshots/helix.png) | ![Ink-bleed menu](docs/screenshots/menu.png) |
+
+| Manifesto quote                              | Contact                                          |
+| -------------------------------------------- | ------------------------------------------------ |
+| ![Quote section](docs/screenshots/quote.png) | ![Contact section](docs/screenshots/contact.png) |
 
 ## ✦ Features
 
