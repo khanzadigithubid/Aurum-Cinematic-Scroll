@@ -5,7 +5,7 @@
   "description": "Award-style scroll-driven 3D experience built with Three.js, GSAP, and Lenis.",
   "type": "module",
   "license": "MIT",
-  "author": "",
+  "author": "Khanzadi Wazir Ali",
   "keywords": [
     "three.js",
     "gsap",
