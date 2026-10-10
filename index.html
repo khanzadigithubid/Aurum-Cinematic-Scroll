@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0a0b" />
+    <meta
+      name="description"
+      content="AURUM — a scroll-driven 3D cinematic experience. Built with Three.js, GSAP ScrollTrigger and Lenis for award-grade web motion."
+    />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href="https://example.com/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="AURUM — Cinematic Scroll Experience" />
+    <meta
+      property="og:description"
+      content="A scroll-driven 3D cinematic experience built with Three.js, GSAP and Lenis."
+    />
+    <meta property="og:image" content="/favicon.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AURUM — Cinematic Scroll Experience" />
+    <meta
+      name="twitter:description"
+      content="A scroll-driven 3D cinematic experience built with Three.js, GSAP and Lenis."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Grotesk:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <title>AURUM — Cinematic Scroll Experience</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#hero">Skip to content</a>
+
+    <div class="cursor" aria-hidden="true">
+      <div class="cursor__dot"></div>
+      <div class="cursor__ring"></div>
+      <span class="cursor__label"></span>
+    </div>
+
+    <div class="preloader" aria-hidden="true">
+      <span class="preloader__count">0</span>
+    </div>
+
+    <canvas class="webgl" aria-hidden="true"></canvas>
+
+    <header class="nav">
+      <a
+        href="#hero"
+        class="nav__logo"
+        data-cursor="hover"
+        aria-label="AURUM — home"
+        >AURUM</a
+      >
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#object" data-cursor="hover" data-magnetic>Object</a>
+        <a href="#gallery" data-cursor="hover" data-magnetic>Gallery</a>
+        <a href="#helix" data-cursor="hover" data-magnetic>Helix</a>
+        <a href="#contact" data-cursor="hover" data-magnetic>Contact</a>
+      </nav>
+      <div class="nav__tools">
+        <button
+          class="sound-toggle"
+          type="button"
+          aria-pressed="false"
+          aria-label="Toggle sound"
+          data-cursor="hover"
+        >
+          <span class="sound-toggle__bar"></span>
+          <span class="sound-toggle__bar"></span>
+          <span class="sound-toggle__bar"></span>
+        </button>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu"
+          aria-label="Open menu"
+          data-cursor="hover"
+        >
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="menu" id="menu" aria-hidden="true">
+      <canvas class="menu__canvas" aria-hidden="true"></canvas>
+      <nav class="menu__nav" aria-label="Menu">
+        <a class="menu__link" href="#hero" data-cursor="hover">
+          <span>Home</span>
+        </a>
+        <a class="menu__link" href="#object" data-cursor="hover">
+          <span>Object</span>
+        </a>
+        <a class="menu__link" href="#gallery" data-cursor="hover">
+          <span>Gallery</span>
+        </a>
+        <a class="menu__link" href="#helix" data-cursor="hover">
+          <span>Helix</span>
+        </a>
+        <a class="menu__link" href="#contact" data-cursor="hover">
+          <span>Contact</span>
+        </a>
+      </nav>
+      <div class="menu__meta">
+        <a href="mailto:hello@example.com" data-cursor="hover"
+          >hello@example.com</a
+        >
+        <span>© 2026 AURUM</span>
+      </div>
+    </div>
+
+    <main>
+      <section class="section section--hero" id="hero">
+        <div class="section__inner">
+          <p class="eyebrow" data-reveal>Creative Studio — 2026</p>
+          <h1 class="hero__title">
+            <span class="line"
+              ><span class="word" data-split>Architects</span></span
+            >
+            <span class="line"
+              ><span class="word" data-split>of immersive</span></span
+            >
+            <span class="line"
+              ><span class="word" data-split>dimensions</span></span
+            >
+          </h1>
+          <p class="hero__sub" data-reveal>
+            Scroll to move the camera. Every beat is a scene.
+          </p>
+        </div>
+        <div class="scroll-hint" aria-hidden="true">
+          <span>Scroll</span>
+          <div class="scroll-hint__bar"></div>
+        </div>
+      </section>
+
+      <section class="section section--pin" id="object">
+        <div class="pin__stage">
+          <div class="pin__content">
+            <span class="section__index">01</span>
+            <h2 class="section__title">
+              <span class="line"><span data-split>One object,</span></span>
+              <span class="line"
+                ><span data-split>rendered with weight</span></span
+              >
+            </h2>
+            <p class="section__body" data-reveal>
+              A single monolith carries the entire frame. Inertia, lighting and
+              Z-depth are driven by scroll progress — not time.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--gallery" id="gallery">
+        <div class="section__inner">
+          <span class="section__index">02</span>
+          <h2 class="section__title">
+            <span class="line"><span data-split>The gallery</span></span>
+            <span class="line"><span data-split>unfolds</span></span>
+          </h2>
+          <div class="gallery">
+            <article class="card" data-index="0" data-cursor="view" data-reveal>
+              <div class="card__media card__media--1"></div>
+              <div class="card__meta">
+                <h3>Nebula</h3>
+                <span>WebGL / Shader</span>
+              </div>
+            </article>
+            <article class="card" data-index="1" data-cursor="view" data-reveal>
+              <div class="card__media card__media--2"></div>
+              <div class="card__meta">
+                <h3>Drift</h3>
+                <span>Scroll / GSAP</span>
+              </div>
+            </article>
+            <article class="card" data-index="2" data-cursor="view" data-reveal>
+              <div class="card__media card__media--3"></div>
+              <div class="card__meta">
+                <h3>Prism</h3>
+                <span>GLSL / Displacement</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--helix" id="helix">
+        <div class="helix__stage">
+          <div class="helix__head">
+            <span class="section__index">03</span>
+            <h2 class="section__title">
+              <span class="line"><span data-split>A collection</span></span>
+              <span class="line"><span data-split>in double helix</span></span>
+            </h2>
+          </div>
+          <canvas class="helix__canvas" aria-hidden="true"></canvas>
+          <p class="helix__hint" data-reveal>
+            Drag your cursor across the strand
+          </p>
+        </div>
+      </section>
+
+      <section class="section section--quote" id="quote">
+        <blockquote class="quote">
+          <p class="quote__text">
+            <span class="line"><span data-split>Motion should</span></span>
+            <span class="line"><span data-split>direct the eye,</span></span>
+            <span class="line"
+              ><span data-split>never decorate noise.</span></span
+            >
+          </p>
+        </blockquote>
+      </section>
+
+      <section class="section section--contact" id="contact">
+        <div class="section__inner">
+          <span class="section__index">04</span>
+          <h2 class="section__title">
+            <span class="line"><span data-split>Let's build</span></span>
+            <span class="line"><span data-split>something rare</span></span>
+          </h2>
+          <a
+            class="btn"
+            href="mailto:hello@example.com"
+            data-cursor="hover"
+            data-magnetic
+          >
+            <span>Start a project</span>
+          </a>
+          <footer class="footer">
+            <span>© 2026 AURUM</span>
+            <span>Built with Three.js · GSAP · Lenis</span>
+          </footer>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+    <noscript>
+      <p style="padding: 2rem; text-align: center">
+        This experience requires JavaScript. Please enable it to view the site.
+      </p>
+    </noscript>
+  </body>
+</html>
